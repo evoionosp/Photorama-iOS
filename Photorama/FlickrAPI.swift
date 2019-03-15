@@ -89,7 +89,7 @@ struct FlickrAPI {
         }
     }
     
-    private static func photo(fromJSON json: [String : Array]) -> Photo? {
+    private static func photo(fromJSON json: [String : Any]) -> Photo? {
         guard
         let photoID = json["id"] as? String,
         let title = json["title"] as? String,
