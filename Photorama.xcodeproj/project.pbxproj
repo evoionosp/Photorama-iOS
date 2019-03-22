@@ -7,70 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52BFC45A223B1396008171E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC459223B1396008171E1 /* AppDelegate.swift */; };
-		52BFC45F223B1396008171E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BFC45D223B1396008171E1 /* Main.storyboard */; };
-		52BFC461223B1397008171E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BFC460223B1397008171E1 /* Assets.xcassets */; };
-		52BFC464223B1397008171E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BFC462223B1397008171E1 /* LaunchScreen.storyboard */; };
-		52BFC46F223B1397008171E1 /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC46E223B1397008171E1 /* PhotoramaTests.swift */; };
-		52BFC47A223B1397008171E1 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC479223B1397008171E1 /* PhotoramaUITests.swift */; };
-		52BFC488223B13D6008171E1 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC487223B13D6008171E1 /* PhotosViewController.swift */; };
-		52BFC48A223B19DF008171E1 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC489223B19DF008171E1 /* FlickrAPI.swift */; };
-		52BFC48C223B1F3C008171E1 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC48B223B1F3C008171E1 /* PhotoStore.swift */; };
-		52BFC48E223B24B1008171E1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BFC48D223B24B1008171E1 /* Photo.swift */; };
+		3B04FFA2224453E80090FF4B /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04FFA1224453E80090FF4B /* PhotoDataSource.swift */; };
+		3B04FFA4224459E80090FF4B /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B04FFA3224459E80090FF4B /* PhotoCollectionViewCell.swift */; };
+		3BF24903223B105A00981590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24902223B105A00981590 /* AppDelegate.swift */; };
+		3BF24908223B105A00981590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF24906223B105A00981590 /* Main.storyboard */; };
+		3BF2490A223B105D00981590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF24909223B105D00981590 /* Assets.xcassets */; };
+		3BF2490D223B105D00981590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2490B223B105D00981590 /* LaunchScreen.storyboard */; };
+		3BF24918223B105E00981590 /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24917223B105E00981590 /* PhotoramaTests.swift */; };
+		3BF24923223B105E00981590 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24922223B105E00981590 /* PhotoramaUITests.swift */; };
+		3BF24931223B108700981590 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24930223B108700981590 /* PhotosViewController.swift */; };
+		3BF24934223B155E00981590 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24933223B155E00981590 /* FlickrAPI.swift */; };
+		3BF24936223B1EFD00981590 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24935223B1EFD00981590 /* PhotoStore.swift */; };
+		3BF24938223B294900981590 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF24937223B294900981590 /* Photo.swift */; };
+		3BF2493A223B375700981590 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BF24939223B375700981590 /* Contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52BFC46B223B1397008171E1 /* PBXContainerItemProxy */ = {
+		3BF24914223B105D00981590 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52BFC44E223B1396008171E1 /* Project object */;
+			containerPortal = 3BF248F7223B105A00981590 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52BFC455223B1396008171E1;
+			remoteGlobalIDString = 3BF248FE223B105A00981590;
 			remoteInfo = Photorama;
 		};
-		52BFC476223B1397008171E1 /* PBXContainerItemProxy */ = {
+		3BF2491F223B105E00981590 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52BFC44E223B1396008171E1 /* Project object */;
+			containerPortal = 3BF248F7223B105A00981590 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52BFC455223B1396008171E1;
+			remoteGlobalIDString = 3BF248FE223B105A00981590;
 			remoteInfo = Photorama;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52BFC456223B1396008171E1 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52BFC459223B1396008171E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52BFC45E223B1396008171E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		52BFC460223B1397008171E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52BFC463223B1397008171E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		52BFC465223B1397008171E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52BFC46A223B1397008171E1 /* PhotoramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52BFC46E223B1397008171E1 /* PhotoramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaTests.swift; sourceTree = "<group>"; };
-		52BFC470223B1397008171E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52BFC475223B1397008171E1 /* PhotoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52BFC479223B1397008171E1 /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
-		52BFC47B223B1397008171E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52BFC487223B13D6008171E1 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		52BFC489223B19DF008171E1 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
-		52BFC48B223B1F3C008171E1 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
-		52BFC48D223B24B1008171E1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3B04FFA1224453E80090FF4B /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		3B04FFA3224459E80090FF4B /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BF248FF223B105A00981590 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF24902223B105A00981590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BF24907223B105A00981590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BF24909223B105D00981590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BF2490C223B105D00981590 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BF2490E223B105D00981590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF24913223B105D00981590 /* PhotoramaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF24917223B105E00981590 /* PhotoramaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaTests.swift; sourceTree = "<group>"; };
+		3BF24919223B105E00981590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF2491E223B105E00981590 /* PhotoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF24922223B105E00981590 /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
+		3BF24924223B105E00981590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF24930223B108700981590 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		3BF24933223B155E00981590 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		3BF24935223B1EFD00981590 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		3BF24937223B294900981590 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		3BF24939223B375700981590 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		52BFC453223B1396008171E1 /* Frameworks */ = {
+		3BF248FC223B105A00981590 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC467223B1397008171E1 /* Frameworks */ = {
+		3BF24910223B105D00981590 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC472223B1397008171E1 /* Frameworks */ = {
+		3BF2491B223B105E00981590 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,56 +86,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52BFC44D223B1396008171E1 = {
+		3BF248F6223B105A00981590 = {
 			isa = PBXGroup;
 			children = (
-				52BFC458223B1396008171E1 /* Photorama */,
-				52BFC46D223B1397008171E1 /* PhotoramaTests */,
-				52BFC478223B1397008171E1 /* PhotoramaUITests */,
-				52BFC457223B1396008171E1 /* Products */,
+				3BF24901223B105A00981590 /* Photorama */,
+				3BF24916223B105E00981590 /* PhotoramaTests */,
+				3BF24921223B105E00981590 /* PhotoramaUITests */,
+				3BF24900223B105A00981590 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		52BFC457223B1396008171E1 /* Products */ = {
+		3BF24900223B105A00981590 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52BFC456223B1396008171E1 /* Photorama.app */,
-				52BFC46A223B1397008171E1 /* PhotoramaTests.xctest */,
-				52BFC475223B1397008171E1 /* PhotoramaUITests.xctest */,
+				3BF248FF223B105A00981590 /* Photorama.app */,
+				3BF24913223B105D00981590 /* PhotoramaTests.xctest */,
+				3BF2491E223B105E00981590 /* PhotoramaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52BFC458223B1396008171E1 /* Photorama */ = {
+		3BF24901223B105A00981590 /* Photorama */ = {
 			isa = PBXGroup;
 			children = (
-				52BFC459223B1396008171E1 /* AppDelegate.swift */,
-				52BFC45D223B1396008171E1 /* Main.storyboard */,
-				52BFC460223B1397008171E1 /* Assets.xcassets */,
-				52BFC462223B1397008171E1 /* LaunchScreen.storyboard */,
-				52BFC465223B1397008171E1 /* Info.plist */,
-				52BFC487223B13D6008171E1 /* PhotosViewController.swift */,
-				52BFC489223B19DF008171E1 /* FlickrAPI.swift */,
-				52BFC48B223B1F3C008171E1 /* PhotoStore.swift */,
-				52BFC48D223B24B1008171E1 /* Photo.swift */,
+				3BF24933223B155E00981590 /* FlickrAPI.swift */,
+				3BF24902223B105A00981590 /* AppDelegate.swift */,
+				3BF24906223B105A00981590 /* Main.storyboard */,
+				3BF24909223B105D00981590 /* Assets.xcassets */,
+				3BF24939223B375700981590 /* Contents.json */,
+				3BF2490B223B105D00981590 /* LaunchScreen.storyboard */,
+				3BF2490E223B105D00981590 /* Info.plist */,
+				3BF24930223B108700981590 /* PhotosViewController.swift */,
+				3BF24935223B1EFD00981590 /* PhotoStore.swift */,
+				3BF24937223B294900981590 /* Photo.swift */,
+				3B04FFA1224453E80090FF4B /* PhotoDataSource.swift */,
+				3B04FFA3224459E80090FF4B /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
 		};
-		52BFC46D223B1397008171E1 /* PhotoramaTests */ = {
+		3BF24916223B105E00981590 /* PhotoramaTests */ = {
 			isa = PBXGroup;
 			children = (
-				52BFC46E223B1397008171E1 /* PhotoramaTests.swift */,
-				52BFC470223B1397008171E1 /* Info.plist */,
+				3BF24917223B105E00981590 /* PhotoramaTests.swift */,
+				3BF24919223B105E00981590 /* Info.plist */,
 			);
 			path = PhotoramaTests;
 			sourceTree = "<group>";
 		};
-		52BFC478223B1397008171E1 /* PhotoramaUITests */ = {
+		3BF24921223B105E00981590 /* PhotoramaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				52BFC479223B1397008171E1 /* PhotoramaUITests.swift */,
-				52BFC47B223B1397008171E1 /* Info.plist */,
+				3BF24922223B105E00981590 /* PhotoramaUITests.swift */,
+				3BF24924223B105E00981590 /* Info.plist */,
 			);
 			path = PhotoramaUITests;
 			sourceTree = "<group>";
@@ -137,13 +146,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52BFC455223B1396008171E1 /* Photorama */ = {
+		3BF248FE223B105A00981590 /* Photorama */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52BFC47E223B1397008171E1 /* Build configuration list for PBXNativeTarget "Photorama" */;
+			buildConfigurationList = 3BF24927223B105E00981590 /* Build configuration list for PBXNativeTarget "Photorama" */;
 			buildPhases = (
-				52BFC452223B1396008171E1 /* Sources */,
-				52BFC453223B1396008171E1 /* Frameworks */,
-				52BFC454223B1396008171E1 /* Resources */,
+				3BF248FB223B105A00981590 /* Sources */,
+				3BF248FC223B105A00981590 /* Frameworks */,
+				3BF248FD223B105A00981590 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -151,69 +160,69 @@
 			);
 			name = Photorama;
 			productName = Photorama;
-			productReference = 52BFC456223B1396008171E1 /* Photorama.app */;
+			productReference = 3BF248FF223B105A00981590 /* Photorama.app */;
 			productType = "com.apple.product-type.application";
 		};
-		52BFC469223B1397008171E1 /* PhotoramaTests */ = {
+		3BF24912223B105D00981590 /* PhotoramaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52BFC481223B1397008171E1 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */;
+			buildConfigurationList = 3BF2492A223B105E00981590 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */;
 			buildPhases = (
-				52BFC466223B1397008171E1 /* Sources */,
-				52BFC467223B1397008171E1 /* Frameworks */,
-				52BFC468223B1397008171E1 /* Resources */,
+				3BF2490F223B105D00981590 /* Sources */,
+				3BF24910223B105D00981590 /* Frameworks */,
+				3BF24911223B105D00981590 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				52BFC46C223B1397008171E1 /* PBXTargetDependency */,
+				3BF24915223B105D00981590 /* PBXTargetDependency */,
 			);
 			name = PhotoramaTests;
 			productName = PhotoramaTests;
-			productReference = 52BFC46A223B1397008171E1 /* PhotoramaTests.xctest */;
+			productReference = 3BF24913223B105D00981590 /* PhotoramaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		52BFC474223B1397008171E1 /* PhotoramaUITests */ = {
+		3BF2491D223B105E00981590 /* PhotoramaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52BFC484223B1397008171E1 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */;
+			buildConfigurationList = 3BF2492D223B105E00981590 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */;
 			buildPhases = (
-				52BFC471223B1397008171E1 /* Sources */,
-				52BFC472223B1397008171E1 /* Frameworks */,
-				52BFC473223B1397008171E1 /* Resources */,
+				3BF2491A223B105E00981590 /* Sources */,
+				3BF2491B223B105E00981590 /* Frameworks */,
+				3BF2491C223B105E00981590 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				52BFC477223B1397008171E1 /* PBXTargetDependency */,
+				3BF24920223B105E00981590 /* PBXTargetDependency */,
 			);
 			name = PhotoramaUITests;
 			productName = PhotoramaUITests;
-			productReference = 52BFC475223B1397008171E1 /* PhotoramaUITests.xctest */;
+			productReference = 3BF2491E223B105E00981590 /* PhotoramaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		52BFC44E223B1396008171E1 /* Project object */ = {
+		3BF248F7223B105A00981590 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Shubh Patel";
+				ORGANIZATIONNAME = Diego_Lopez;
 				TargetAttributes = {
-					52BFC455223B1396008171E1 = {
+					3BF248FE223B105A00981590 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					52BFC469223B1397008171E1 = {
+					3BF24912223B105D00981590 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 52BFC455223B1396008171E1;
+						TestTargetID = 3BF248FE223B105A00981590;
 					};
-					52BFC474223B1397008171E1 = {
+					3BF2491D223B105E00981590 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 52BFC455223B1396008171E1;
+						TestTargetID = 3BF248FE223B105A00981590;
 					};
 				};
 			};
-			buildConfigurationList = 52BFC451223B1396008171E1 /* Build configuration list for PBXProject "Photorama" */;
+			buildConfigurationList = 3BF248FA223B105A00981590 /* Build configuration list for PBXProject "Photorama" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,37 +230,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 52BFC44D223B1396008171E1;
-			productRefGroup = 52BFC457223B1396008171E1 /* Products */;
+			mainGroup = 3BF248F6223B105A00981590;
+			productRefGroup = 3BF24900223B105A00981590 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52BFC455223B1396008171E1 /* Photorama */,
-				52BFC469223B1397008171E1 /* PhotoramaTests */,
-				52BFC474223B1397008171E1 /* PhotoramaUITests */,
+				3BF248FE223B105A00981590 /* Photorama */,
+				3BF24912223B105D00981590 /* PhotoramaTests */,
+				3BF2491D223B105E00981590 /* PhotoramaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		52BFC454223B1396008171E1 /* Resources */ = {
+		3BF248FD223B105A00981590 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BFC464223B1397008171E1 /* LaunchScreen.storyboard in Resources */,
-				52BFC461223B1397008171E1 /* Assets.xcassets in Resources */,
-				52BFC45F223B1396008171E1 /* Main.storyboard in Resources */,
+				3BF2490D223B105D00981590 /* LaunchScreen.storyboard in Resources */,
+				3BF2490A223B105D00981590 /* Assets.xcassets in Resources */,
+				3BF24908223B105A00981590 /* Main.storyboard in Resources */,
+				3BF2493A223B375700981590 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC468223B1397008171E1 /* Resources */ = {
+		3BF24911223B105D00981590 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC473223B1397008171E1 /* Resources */ = {
+		3BF2491C223B105E00981590 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,62 +271,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		52BFC452223B1396008171E1 /* Sources */ = {
+		3BF248FB223B105A00981590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BFC48A223B19DF008171E1 /* FlickrAPI.swift in Sources */,
-				52BFC488223B13D6008171E1 /* PhotosViewController.swift in Sources */,
-				52BFC48C223B1F3C008171E1 /* PhotoStore.swift in Sources */,
-				52BFC45A223B1396008171E1 /* AppDelegate.swift in Sources */,
-				52BFC48E223B24B1008171E1 /* Photo.swift in Sources */,
+				3BF24934223B155E00981590 /* FlickrAPI.swift in Sources */,
+				3BF24931223B108700981590 /* PhotosViewController.swift in Sources */,
+				3BF24936223B1EFD00981590 /* PhotoStore.swift in Sources */,
+				3B04FFA2224453E80090FF4B /* PhotoDataSource.swift in Sources */,
+				3B04FFA4224459E80090FF4B /* PhotoCollectionViewCell.swift in Sources */,
+				3BF24903223B105A00981590 /* AppDelegate.swift in Sources */,
+				3BF24938223B294900981590 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC466223B1397008171E1 /* Sources */ = {
+		3BF2490F223B105D00981590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BFC46F223B1397008171E1 /* PhotoramaTests.swift in Sources */,
+				3BF24918223B105E00981590 /* PhotoramaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52BFC471223B1397008171E1 /* Sources */ = {
+		3BF2491A223B105E00981590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52BFC47A223B1397008171E1 /* PhotoramaUITests.swift in Sources */,
+				3BF24923223B105E00981590 /* PhotoramaUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52BFC46C223B1397008171E1 /* PBXTargetDependency */ = {
+		3BF24915223B105D00981590 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52BFC455223B1396008171E1 /* Photorama */;
-			targetProxy = 52BFC46B223B1397008171E1 /* PBXContainerItemProxy */;
+			target = 3BF248FE223B105A00981590 /* Photorama */;
+			targetProxy = 3BF24914223B105D00981590 /* PBXContainerItemProxy */;
 		};
-		52BFC477223B1397008171E1 /* PBXTargetDependency */ = {
+		3BF24920223B105E00981590 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52BFC455223B1396008171E1 /* Photorama */;
-			targetProxy = 52BFC476223B1397008171E1 /* PBXContainerItemProxy */;
+			target = 3BF248FE223B105A00981590 /* Photorama */;
+			targetProxy = 3BF2491F223B105E00981590 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52BFC45D223B1396008171E1 /* Main.storyboard */ = {
+		3BF24906223B105A00981590 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				52BFC45E223B1396008171E1 /* Base */,
+				3BF24907223B105A00981590 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		52BFC462223B1397008171E1 /* LaunchScreen.storyboard */ = {
+		3BF2490B223B105D00981590 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				52BFC463223B1397008171E1 /* Base */,
+				3BF2490C223B105D00981590 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -324,7 +336,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		52BFC47C223B1397008171E1 /* Debug */ = {
+		3BF24925223B105E00981590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -385,7 +397,7 @@
 			};
 			name = Debug;
 		};
-		52BFC47D223B1397008171E1 /* Release */ = {
+		3BF24926223B105E00981590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -440,56 +452,56 @@
 			};
 			name = Release;
 		};
-		52BFC47F223B1397008171E1 /* Debug */ = {
+		3BF24928223B105E00981590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Photorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.Photorama;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		52BFC480223B1397008171E1 /* Release */ = {
+		3BF24929223B105E00981590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Photorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.Photorama;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.Photorama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		52BFC482223B1397008171E1 /* Debug */ = {
+		3BF2492B223B105E00981590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = PhotoramaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.PhotoramaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,20 +509,20 @@
 			};
 			name = Debug;
 		};
-		52BFC483223B1397008171E1 /* Release */ = {
+		3BF2492C223B105E00981590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = PhotoramaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.PhotoramaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.PhotoramaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,19 +530,19 @@
 			};
 			name = Release;
 		};
-		52BFC485223B1397008171E1 /* Debug */ = {
+		3BF2492E223B105E00981590 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = PhotoramaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.PhotoramaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,19 +550,19 @@
 			};
 			name = Debug;
 		};
-		52BFC486223B1397008171E1 /* Release */ = {
+		3BF2492F223B105E00981590 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7982SQHQ;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = PhotoramaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blankspace.PhotoramaUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.centennialcollege.PhotoramaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -561,43 +573,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52BFC451223B1396008171E1 /* Build configuration list for PBXProject "Photorama" */ = {
+		3BF248FA223B105A00981590 /* Build configuration list for PBXProject "Photorama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52BFC47C223B1397008171E1 /* Debug */,
-				52BFC47D223B1397008171E1 /* Release */,
+				3BF24925223B105E00981590 /* Debug */,
+				3BF24926223B105E00981590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52BFC47E223B1397008171E1 /* Build configuration list for PBXNativeTarget "Photorama" */ = {
+		3BF24927223B105E00981590 /* Build configuration list for PBXNativeTarget "Photorama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52BFC47F223B1397008171E1 /* Debug */,
-				52BFC480223B1397008171E1 /* Release */,
+				3BF24928223B105E00981590 /* Debug */,
+				3BF24929223B105E00981590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52BFC481223B1397008171E1 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */ = {
+		3BF2492A223B105E00981590 /* Build configuration list for PBXNativeTarget "PhotoramaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52BFC482223B1397008171E1 /* Debug */,
-				52BFC483223B1397008171E1 /* Release */,
+				3BF2492B223B105E00981590 /* Debug */,
+				3BF2492C223B105E00981590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52BFC484223B1397008171E1 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */ = {
+		3BF2492D223B105E00981590 /* Build configuration list for PBXNativeTarget "PhotoramaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52BFC485223B1397008171E1 /* Debug */,
-				52BFC486223B1397008171E1 /* Release */,
+				3BF2492E223B105E00981590 /* Debug */,
+				3BF2492F223B105E00981590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 52BFC44E223B1396008171E1 /* Project object */;
+	rootObject = 3BF248F7223B105A00981590 /* Project object */;
 }

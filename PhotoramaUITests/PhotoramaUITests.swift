@@ -2,7 +2,7 @@
 //  PhotoramaUITests.swift
 //  PhotoramaUITests
 //
-//  Created by Shubh Patel on 2019-03-14.
+//  Created by Diego  lopez on 2019-03-14.
 //  Copyright © 2019 Shubh Patel. All rights reserved.
 //
 

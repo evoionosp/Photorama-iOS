@@ -2,7 +2,7 @@
 //  FlickrAPI.swift
 //  Photorama
 //
-//  Created by Shubh Patel on 2019-03-14.
+//  Created by Diego  lopez on 2019-03-14.
 //  Copyright © 2019 Shubh Patel. All rights reserved.
 //
 
@@ -63,10 +63,9 @@ struct FlickrAPI {
             let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
             
             guard
-            let jsonDictionary = jsonObject as? [AnyHashable:Any],
-            let photos = jsonDictionary["photos"] as? [String:Any],
+                let jsonDictionary = jsonObject as? [AnyHashable:Any],
+                let photos = jsonDictionary["photos"] as? [String:Any],
                 let photosArray = photos["photo"] as? [[String:Any]] else {
-                    //JSON structure not match
                     return .failure(FlickrError.invalidJSONData)
             }
             
@@ -79,7 +78,38 @@ struct FlickrAPI {
             
             if finalPhotos.isEmpty && !photosArray.isEmpty {
                 
-                // Maybe the JSON format for photos has been changed
+                
+                return .failure(FlickrError.invalidJSONData)
+            }
+            return .success(finalPhotos)
+        } catch let error {
+            return .failure(error)
+        }
+    }
+    
+    static func photos(fromJSON data: Data, search: String) -> PhotosResult {
+        do {
+            let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+            
+            guard
+                let jsonDictionary = jsonObject as? [AnyHashable:Any],
+                let photos = jsonDictionary["photos"] as? [String:Any],
+                let photosArray = photos["photo"] as? [[String:Any]] else {
+                    return .failure(FlickrError.invalidJSONData)
+            }
+            
+            var finalPhotos = [Photo]()
+            for photoJSON in photosArray {
+                if let photo = photo(fromJSON: photoJSON){
+                    if photo.title.contains(search){
+                        finalPhotos.append(photo)
+                    }
+                    
+                }
+            }
+            
+            if finalPhotos.isEmpty && !photosArray.isEmpty {
+                
                 
                 return .failure(FlickrError.invalidJSONData)
             }
@@ -91,16 +121,16 @@ struct FlickrAPI {
     
     private static func photo(fromJSON json: [String : Any]) -> Photo? {
         guard
-        let photoID = json["id"] as? String,
-        let title = json["title"] as? String,
-        let dateString = json["datetaken"] as? String,
-        let photoURLString = json["url_h"] as? String,
-        let url = URL(string: photoURLString),
+            let photoID = json["id"] as? String,
+            let title = json["title"] as? String,
+            let dateString = json["datetaken"] as? String,
+            let photoURLString = json["url_h"] as? String,
+            let url = URL(string: photoURLString),
             let datetaken = dateFormatter.date(from: dateString) else {
-                // Don't have enough information about photo
                 
                 return nil
         }
         return Photo(title: title, remoteURL: url, photoID: photoID, dateTaken: datetaken)
     }
 }
+

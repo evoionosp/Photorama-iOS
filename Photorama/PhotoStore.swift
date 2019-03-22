@@ -40,7 +40,7 @@ class PhotoStore {
                 
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
-                     print(jsonObject)
+                    print(jsonObject)
                 } catch let error {
                     print("Error creating JSON: \(error)")
                 }
@@ -58,12 +58,49 @@ class PhotoStore {
         task.resume()
     }
     
+    func fetchInterestingPhotos(search: String, completion: @escaping (PhotosResult) -> Void) {
+        let url = FlickrAPI.interestingPhotosURL
+        let request = URLRequest(url: url)
+        
+        let task = session.dataTask(with: request){
+            (data, response, error) -> Void in
+            
+            if let jsonData = data {
+                
+                do {
+                    let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
+                    print(jsonObject)
+                } catch let error {
+                    print("Error creating JSON: \(error)")
+                }
+            } else if let requestError = error {
+                print("Error fetching interesting photos: \(requestError)")
+            } else {
+                print(" Unexpected Error with request")
+            }
+            
+            let result = self.processPhotosRequest(data: data, search: search ,error: error)
+            OperationQueue.main.addOperation {
+                completion(result)
+            }
+        }
+        task.resume()
+    }
+    
     private func processPhotosRequest(data: Data?, error: Error?) -> PhotosResult {
         guard let jsonData = data else {
             return .failure(error!)
         }
         
         return FlickrAPI.photos(fromJSON: jsonData)
+    }
+    
+    private func processPhotosRequest(data: Data?,search: String, error: Error?) -> PhotosResult {
+        guard let jsonData = data else {
+            return .failure(error!)
+        }
+        
+        return FlickrAPI.photos(fromJSON: jsonData, search: search)
     }
     
     func fetchImage(for photo: Photo, completion: @escaping (ImageResult) -> Void) {
@@ -94,7 +131,7 @@ class PhotoStore {
                 } else {
                     return .failure(PhotoError.imageCreationError)
                 }
-            
+                
         }
         
         return .success(image)
